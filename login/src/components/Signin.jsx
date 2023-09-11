@@ -118,7 +118,12 @@ export default function SignIn() {
                   </Button>
                   <Grid container>
                     <Grid item>
-                      <Link to={`/sign-up/`}>新規登録はこちら</Link>
+                      <Link
+                        to={`/sign-up/`}
+                        className=" text-blue-500 underline underline-offset-2 text-lg"
+                      >
+                        新規登録はこちら
+                      </Link>
                     </Grid>
                   </Grid>
                 </Box>

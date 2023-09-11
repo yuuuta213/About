@@ -2,6 +2,7 @@ import { onAuthStateChanged, signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { auth } from '../firebase';
 import { Navigate, useNavigate } from 'react-router-dom';
+import Weather from './Weather';
 
 const Mypage = () => {
   const [user, setUser] = useState('');
@@ -33,6 +34,7 @@ const Mypage = () => {
                 <h1>マイページ</h1>
                 <p>{user?.email}</p>
                 <button onClick={logout}>ログアウト</button>
+                <Weather />
               </div>
             </>
           )}

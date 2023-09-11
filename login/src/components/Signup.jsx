@@ -131,7 +131,12 @@ export default function SignUp() {
                   </Button>
                   <Grid container justifyContent="flex-end">
                     <Grid item>
-                      <Link to={`/sign-in/`}>ログインはこちらから</Link>
+                      <Link
+                        to={`/sign-in/`}
+                        className="text-blue-500 underline underline-offset-2 text-lg"
+                      >
+                        ログインはこちらから
+                      </Link>
                     </Grid>
                   </Grid>
                 </Box>
